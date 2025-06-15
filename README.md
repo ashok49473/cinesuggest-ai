@@ -1,9 +1,10 @@
 # CineSuggest AI - Your personal guide to the world of cinema!
-
-
-![image](https://github.com/user-attachments/assets/7c9fc425-b751-4f18-bbc8-3e47036ceb7e)
-
 A content-based movie recommendation system that uses the Cosine similarity and Nearest Neighbors algorithm to suggest similar movies. It integrates with The Movie Database (TMDB) API to enhance recommendations with detailed movie metadata such as posters, genres, and overviews.
+
+### User will first see the selected movie details:
+![image](https://github.com/user-attachments/assets/ca6d9568-599f-48d8-aab2-dd699d17a9e2)
+### After the user clicks the 'Get Recommendations' button, they will receive a list of movies similar to the one they selected:
+![image](https://github.com/user-attachments/assets/f954716a-a8b6-43e8-8c01-4fcae9374d30)
 
 
 ## Project Structure
@@ -11,17 +12,19 @@ A content-based movie recommendation system that uses the Cosine similarity and 
 ```
 movie-recommendation-system/
 ├── main.py                 # Main application entry point
-├── models.py              # Data models and structures
-├── repository.py          # Data access layer
-├── data_provider.py       # TMDB API integration
-├── service.py             # Business logic layer
-├── ui_components.py       # UI components and layouts
-├── config.py              # Configuration settings
+├──src
+   ├── models.py              # Data models and structures
+   ├── repository.py          # Data access layer
+   ├── data_provider.py       # TMDB API integration
+   ├── service.py             # Business logic layer
+   ├── ui_components.py       # UI components and layouts
+   ├── config.py              # Configuration settings
 ├── requirements.txt       # Python dependencies
 ├── README.md             # This file
-├── movie_info.csv        # Movie information dataset
-└── similarity.pkl        # Pre-computed similarity matrix
-```
+├── artifacts
+   ├── movie_info.csv        # Movie information dataset
+   ├── similarity.pkl        # Pre-computed similarity matrix
+```/
 
 ## Architecture
 
