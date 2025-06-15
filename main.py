@@ -3,7 +3,11 @@ from src.repository import MovieRepository
 from src.data_provider import TMDBMovieDataProvider
 from src.service import MovieService
 from src.ui_components import MovieUIComponents
+<<<<<<< HEAD
 
+=======
+from src.config import app_config
+>>>>>>> b46c11e (modularize code)
 
 def main():
     st.set_page_config(
@@ -26,8 +30,9 @@ def main():
     # Initialize the components
     try:
         movie_repository = MovieRepository(
-            movie_info_path="movie_info.csv",
-            similarity_path="similarity.pkl"
+
+            movie_info_path=app_config.movie_info_path,
+            similarity_path=app_config.similarity_path
         )
         
         data_provider = TMDBMovieDataProvider(api_key=tmdb_api_key)

@@ -20,8 +20,9 @@ class APIConfig:
 @dataclass
 class AppConfig:
     """Configuration for the application"""
-    movie_info_path: str = "movie_info.csv"
-    similarity_path: str = "similarity.pkl"
+
+    movie_info_path: str = "src/artifacts/movie_info.csv"
+    similarity_path: str = "src/artifacts/similarity.pkl"
     default_recommendations: int = 10
     grid_columns: int = 5
     poster_width_large: int = 300
