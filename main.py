@@ -3,20 +3,16 @@ from src.repository import MovieRepository
 from src.data_provider import TMDBMovieDataProvider
 from src.service import MovieService
 from src.ui_components import MovieUIComponents
-<<<<<<< HEAD
 
-=======
 from src.config import app_config
->>>>>>> b46c11e (modularize code)
-
 def main():
     st.set_page_config(
-        page_title="Movie Recommendation System",
+        page_title="CineSuggest AI",
         page_icon="🎬",
         layout="wide"
     )
     
-    st.title("🎬 Movie Recommendation System")
+    st.title("🎬 CineSuggest AI")
     
     # Initialize UI components
     ui = MovieUIComponents()
@@ -30,7 +26,6 @@ def main():
     # Initialize the components
     try:
         movie_repository = MovieRepository(
-
             movie_info_path=app_config.movie_info_path,
             similarity_path=app_config.similarity_path
         )

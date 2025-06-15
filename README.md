@@ -1,9 +1,9 @@
-# Movie Recommendation System
+# CineSuggest AI - Your personal guide to the world of cinema!
+
 
 ![image](https://github.com/user-attachments/assets/7c9fc425-b751-4f18-bbc8-3e47036ceb7e)
 
-
-A content-based movie recommendation system that uses the Nearest Neighbors algorithm to suggest similar movies. It integrates with The Movie Database (TMDB) API to enhance recommendations with detailed movie metadata such as posters, genres, and overviews.
+A content-based movie recommendation system that uses the Cosine similarity and Nearest Neighbors algorithm to suggest similar movies. It integrates with The Movie Database (TMDB) API to enhance recommendations with detailed movie metadata such as posters, genres, and overviews.
 
 
 ## Project Structure
